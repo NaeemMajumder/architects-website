@@ -1,0 +1,24 @@
+@media screen and (max-width:576px) {
+    
+    /* nav-bar */
+
+    .nav-bar, .nav-bar ul{
+        flex-direction: column;
+    }
+    .nav-bar{
+        row-gap: 40px;
+    }
+    .nav-bar ul{
+        align-items: center;
+        row-gap:20px;
+    }
+
+
+    /* hero-area */
+
+    .hero-area .hero-area-content h1, .hero-area .hero-area-content p{
+        width: 100%;
+    }
+
+
+}

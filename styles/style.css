@@ -1,0 +1,135 @@
+/*===============
+    COMMON CSS 
+================*/
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+/*====================== 
+    Multiple Use CSS 
+=======================*/
+
+:root{
+    --dark1:rgb(19, 19, 19);
+    --dark2:rgb(66, 66, 66);
+    --dark3:rgb(114, 114, 114);
+    --background:rgba(255, 144, 14, 0.1);
+    --button:rgb(255, 144, 14);
+    --white:rgb(255,255,255);
+}
+
+.width{
+    max-width: 1250px;
+}
+
+.flex{
+    display: flex;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--dark1);
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark1);
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dark3);
+}
+
+.btn{
+    padding: 20px 24px;
+    background-color: var(--button);
+    border: none;
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*==============
+    Main CSS
+===============*/
+
+header{
+    background-color: var(--background);
+    padding-bottom: 45px;
+}
+
+
+/* nav bar */
+
+.nav-bar{
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nav-bar ul{
+    column-gap: 50px;
+}
+
+.nav-bar ul li{
+    list-style: none;
+}
+
+.nav-bar ul li a{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--dark2);
+}
+
+
+/* hero area */
+
+.hero-area .hero-area-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-area .hero-area-content h1{
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark1);
+
+}
+
+.hero-area .hero-area-content p{
+    width: 70%;
+}
+
+.hero-area .hero-area-content div .btn a{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.hero-area-image img{
+    width: 100%;
+}
