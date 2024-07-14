@@ -54,7 +54,7 @@ p{
     color: var(--dark3);
 }
 
-.btn{
+.btn {
     padding: 20px 24px;
     background-color: var(--button);
     border: none;
@@ -70,6 +70,8 @@ a{
 /*==============
     Main CSS
 ===============*/
+
+/*================ Header area ================*/
 
 header{
     background-color: var(--background);
@@ -133,3 +135,44 @@ header{
 .hero-area-image img{
     width: 100%;
 }
+
+
+/*================ Main area ================*/
+
+/* features section */
+
+.features, .features2{
+    max-width: 1200px;
+    margin-top: 5rem;
+    column-gap: 70px;
+}
+
+.features .features-image{
+    width: calc(60% - 24px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.features .features-content{
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.span1{
+    font-weight: 500;
+    color: var(--dark3);
+}
+
+.span2{
+    color: var(--button);
+}
+
+.features .features-content div .btn a{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+}
+

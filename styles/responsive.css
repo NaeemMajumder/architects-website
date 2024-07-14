@@ -20,5 +20,27 @@
         width: 100%;
     }
 
+    
+    /* features area */
+
+    .features{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+
+    .features .features-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .features-image{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .features .features-image img{
+        justify-self: center;
+        border: 2px solid var(--button);
+        border-radius: 8px;
+    }
 
 }
