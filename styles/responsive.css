@@ -1,18 +1,41 @@
 @media screen and (max-width:576px) {
-    
-    /* nav-bar */
 
-    .nav-bar, .nav-bar ul{
+    /* multiple use */
+
+    .nav-bar, .nav-bar ul,
+    .features2{
         flex-direction: column;
     }
+
+    .features .features-content,
+    .features .features-image,
+    .features2 .features2-content,
+    .features2 .features2-image,
+    .facts .facts-content p,
+    .sponsors p{
+        width: 100%;
+    }
+
+    .features .features-content,
+    .facts .facts-content h2,
+    .facts .facts-content p{
+        text-align: center;
+    }
+
+    d
+    /* nav-bar */
+
     .nav-bar{
-        row-gap: 40px;
+        row-gap: 30px;
     }
     .nav-bar ul{
         align-items: center;
         row-gap:20px;
     }
 
+    .brand{
+        margin-bottom: 30px;
+    }
 
     /* hero-area */
 
@@ -28,13 +51,7 @@
         row-gap: 50px;
     }
 
-    .features .features-content{
-        width: 100%;
-        text-align: center;
-    }
-
     .features .features-image{
-        width: 100%;
         grid-template-columns: 1fr;
     }
     .features .features-image img{
@@ -42,5 +59,84 @@
         border: 2px solid var(--button);
         border-radius: 8px;
     }
+
+
+    /* features2 section */
+
+    .features2 .features2-content h2{
+        border-left: none;
+        border-bottom: 5px solid var(--button);
+        margin-left: 20px;
+        padding: 0 0 20px 0;
+    }
+
+    .features2 .features2-content p{
+        margin-left: 20px;
+    }
+
+    .features2 .features2-content .cards{
+        margin-bottom: 50px;
+    }
+
+    .features2 .features2-content .cards .card{
+        margin: 0 10px;
+    }
+
+    .features2 .features2-content .cards .card:hover{
+        background-color: rgba(172, 172, 172, 0.211);
+    }
+
+    .features2 .features2-image .experience{
+        position: static;
+        width: 70%;
+        margin: 40px auto;
+    }
+
+
+    /* facts area */
+
+    .facts .achievement{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    
+    }
+
+    .facts .achievement .box{
+        height: 180px;
+        width: 180px;
+        border: 1px solid var(--button);
+        border-radius: 8px;
+        padding: 20px 10px;
+    }
+
+    .facts .achievement .box strong{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--dark2);
+        margin: 10px 0;
+    }
+    
+    .facts .achievement .box span{
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--dark3);
+    }
+
+    
+    /* sponsors area*/
+
+    .sponsors{
+        margin-bottom: 100px;
+    }
+
+    .sponsors .logo{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+
+    /* footer */
 
 }

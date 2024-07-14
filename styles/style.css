@@ -45,6 +45,7 @@ h3{
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--dark1);
+    margin-bottom: 10px;
 }
 
 p{
@@ -176,3 +177,167 @@ header{
     color: var(--white);
 }
 
+
+
+/* features 2 section */
+
+.features2{
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.features2 .features2-content{
+    width: 45%;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.features2 .features2-content h2{
+    width: 80%;
+    border-left: 5px solid var(--button);
+    padding-left: 20px;
+}
+
+.features2 .features2-content .cards{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features2 .features2-content .cards .card{
+    padding: 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.features2 .features2-content .cards .card p{
+    font-size: 1rem;
+}
+
+.features2 .features2-image{
+    position: relative;
+    width: 50%;
+}
+
+.features2 .features2-image .image img{
+    width: 100%;
+}
+
+.features2 .features2-image .experience{
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: var(--button);
+    color: var(--white);
+    border-radius: 8px;
+    position: absolute;
+    bottom: 7%;
+    left: -10%;
+}
+
+.experience h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.experience h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* facts section */
+
+.facts{
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.facts .facts-content h2{
+    margin-bottom: 24px;
+}
+
+.facts .facts-content p{
+    width: 50%;
+}
+
+.facts .achievement{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.facts .achievement .box{
+    height: 240px;
+    width: 240px;
+    border: 1px solid var(--button);
+    border-radius: 8px;
+    padding: 45px 32px 60px 32px;
+}
+
+.facts .achievement .box img,
+.facts .achievement .box strong,
+.facts .achievement .box span{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.facts .achievement .box strong{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark2);
+    margin: 10px 0;
+}
+
+.facts .achievement .box span{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark3);
+}
+
+
+/* Sponsors area*/
+
+.sponsors{
+    margin-bottom: 200px;
+}
+
+.sponsors h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sponsors p{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sponsors .logo{
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
+
+/* footer area */
+
+footer{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    padding: 2.5rem;
+    border-radius: 8px;
+}
+footer p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--dark2);
+    text-align: center;
+}
